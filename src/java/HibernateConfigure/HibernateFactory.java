@@ -24,7 +24,7 @@ public class HibernateFactory {
             throw new IllegalStateException("Hibernate SessionFactory is already initialized");
         }
         try {
-            sessionFactory = new Configuration().configure("hibernate.cfg.xml").buildSessionFactory();
+            sessionFactory = new Configuration().configure("persistence.xml").buildSessionFactory();
         } catch (HibernateException he) {
             System.err.println("Error creating Session: " + he);
             throw new ExceptionInInitializerError(he);

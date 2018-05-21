@@ -42,11 +42,11 @@
                     </div>
                     <div class="field ">
                         <label for="name">Nome</label>
-                        <input name="name" id="inputName" type="text" placeholder="Name">
+                        <input name="inputName" id="inputName" type="text" placeholder="Name">
                     </div>
                     <div class="field ">
                         <label for="email">Email</label>
-                        <input name="email" id="inputEmail" type="email" placeholder="Email">
+                        <input name="inputEmail" id="inputEmail" type="email" placeholder="Email">
                     </div>
                     <div class="field">
                         <label for="message">Nacionalidade</label>
@@ -229,15 +229,15 @@
                     </div>
                     <div class="field ">
                         <label for="message">Data de Nascimento</label>
-                        <input name="Date" id="inputDataNasc" type="date" placeholder="Data de nascimento" >
+                        <input name="inputDataNasc" id="inputDataNasc" type="date" placeholder="Data de nascimento" >
                     </div>
                     <div class="field ">
                         <label for="message">Senha</label>
-                        <input name="password" id="inputSenha" type="password" placeholder="Senha" >
+                        <input name="inputSenha" id="inputSenha" type="password" placeholder="Senha" >
                     </div>
                     <div class="field ">
                         <label for="message">Confirmar Senha</label>
-                        <input name="passwordConfirm" id="InputConfirmSenha" type="password" placeholder="Confirmar Senha" >
+                        <input name="InputConfirmSenha" id="InputConfirmSenha" type="password" placeholder="Confirmar Senha" >
                     </div>
                     <ul class="actions">
                         <li><input value="Registrar-se" class="button" type="submit" href="menu.jsp">

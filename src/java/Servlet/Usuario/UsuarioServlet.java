@@ -85,15 +85,17 @@ public class UsuarioServlet extends HttpServlet {
         usuario.setNome(request.getParameter("inputNome"));
         usuario.setEmail(request.getParameter("inputEmail"));
         usuario.setNacionalidade(request.getParameter("inputNacionalidade"));
-        SimpleDateFormat formato = new SimpleDateFormat("dd/MM/yyyy");
-        try {
+        SimpleDateFormat formato = new SimpleDateFormat("MM/dd/yyyy");
+       /* try {
             Date date = formato.parse(request.getParameter("inputDataNasc"));
             usuario.setDataNasc(date);
         } catch (ParseException ex) {
             Logger.getLogger(UsuarioServlet.class.getName()).log(Level.SEVERE, null, ex);
-        }
+        }*/
         HibernateUtil<Usuario> hibernateUser = new HibernateUtil<>();
         String s = hibernateUser.salvar(usuario);
+        PrintWriter out = response.getWriter();
+        out.println(s);
         HttpSession sessao = request.getSession();
         sessao.setAttribute("usuario", usuario);
         sessao.setAttribute("usuario_logado","true");
