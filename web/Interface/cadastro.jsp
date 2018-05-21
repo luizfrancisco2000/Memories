@@ -240,7 +240,7 @@
                         <input name="passwordConfirm" id="InputConfirmSenha" type="password" placeholder="Confirmar Senha" >
                     </div>
                     <ul class="actions">
-                        <li><input value="Registrar-se" class="button" type="submit" href="index.html">
+                        <li><input value="Registrar-se" class="button" type="submit" href="menu.jsp">
                     </ul>
                 </form>
 
